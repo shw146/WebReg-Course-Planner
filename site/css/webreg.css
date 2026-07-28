@@ -47,7 +47,7 @@ button, select, input { font-family: Arial, Helvetica, sans-serif; font-size: 12
 .planned-chip:hover { background: #0A4A65; }
 
 /* ------------------------------------------------ TritonLink banner */
-.tl-banner {
+tl-banner {
   height: 56px;
   background: linear-gradient(#0D648F, #1A719C);
   color: #fff;
@@ -56,13 +56,13 @@ button, select, input { font-family: Arial, Helvetica, sans-serif; font-size: 12
   justify-content: space-between;
   padding: 0 24px 0 28px;
 }
-.tl-brand {
+tl-brand {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
   white-space: nowrap;
 }
-.tl-wordmark {
+tl-wordmark {
   font-family: Garamond, 'EB Garamond', 'Times New Roman', serif;
   font-size: 31px;
   letter-spacing: 0.5px;
@@ -70,7 +70,7 @@ button, select, input { font-family: Arial, Helvetica, sans-serif; font-size: 12
 }
 
 /* "Unofficial" tag riding above the UC San Diego wordmark */
-.tl-unofficial {
+tl-unofficial {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 9px;
@@ -83,7 +83,8 @@ button, select, input { font-family: Arial, Helvetica, sans-serif; font-size: 12
 }
 
 /* clear affiliation disclaimer under the banner */
-.disclaimer-strip {
+disclaimer-strip {
+  display: block;
   background: #fbf6e6;
   border-bottom: 1px solid #eadfb8;
   color: #6b5b1e;
@@ -92,7 +93,7 @@ button, select, input { font-family: Arial, Helvetica, sans-serif; font-size: 12
   text-align: center;
   padding: 5px 14px;
 }
-.disclaimer-strip b { color: #5a4a12; }
+.disclaimer-strip strong { color: #5a4a12; }
 
 /* pale-blue nav tab strip */
 .tl-nav {
@@ -132,11 +133,11 @@ button, select, input { font-family: Arial, Helvetica, sans-serif; font-size: 12
 }
 
 /* decorative shard strip (abstract triangles + fade to white) */
-.tl-shard { height: 74px; overflow: hidden; background: #fff; }
-.tl-shard svg { display: block; width: 100%; height: 74px; }
+tl-shard { height: 74px; overflow: hidden; background: #fff; }
+tl-shard svg { display: block; width: 100%; height: 74px; }
 
 /* ------------------------------------------------ page frame */
-.page {
+main {
   max-width: 990px;
   margin: 0 auto;
   padding: 4px 18px 0;
@@ -144,7 +145,7 @@ button, select, input { font-family: Arial, Helvetica, sans-serif; font-size: 12
   position: relative;
 }
 
-.page-title {
+h1 {
   color: #CB6C12;
   font-size: 22px;
   font-weight: bold;
@@ -897,9 +898,10 @@ table.confirm-table {
   .tip-jar { width: 170px; right: 8px; bottom: 8px; }
   .tip-qr { width: 120px; }
 }
-.page-footer {
+footer {
+    max-width: 990px;
+    margin: 6px auto 0;
   border-top: 1px solid #ccc;
-  margin-top: 6px;
   padding: 10px 0 30px;
   display: flex;
   justify-content: space-between;
@@ -907,11 +909,11 @@ table.confirm-table {
   font-size: 11px;
   line-height: 1.6;
 }
-.page-footer a { font-weight: normal; }
-.footer-wordmark {
+footer a { font-weight: normal; }
+footer-wordmark {
   font-family: Garamond, 'EB Garamond', 'Times New Roman', serif;
   font-size: 26px;
-  color: #c8c8c8;
+  color: black;
   white-space: nowrap;
 }
 
@@ -953,7 +955,7 @@ table.confirm-table {
 
   /* tighter page gutters */
   .page { padding: 4px 12px 0; }
-  .page-title { font-size: 19px; padding: 6px 0 2px; }
+  h1 { font-size: 19px; padding: 6px 0 2px; }
 
   /* header links wrap; the term select drops to its own full-width line */
   .hdr-row { gap: 2px 0; }
