@@ -14,138 +14,137 @@
 <script data-goatcounter="https://ssssss.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 <style>
-  .mig{ max-width:760px; margin:0 auto; }
-  .mig-intro{ font-size:13px; line-height:1.7; color:#333; margin:12px 0 0; }
-  .mig-cta{ text-align:center; margin:60px 0 72px; }
-  .go-btn{
+  article{ max-width:760px; margin:0 auto; font-size:13px;}
+  p{ font-size:1em; line-height:1.7; color:#333; margin:12px 0 0; }
+  #mig-cta{ text-align:center; margin:60px 0 72px; }
+  #go-btn{
     display:inline-block; text-decoration:none;
     font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:27px;
     color:#0A4A65; background:linear-gradient(#FFE05C,#FFCD00 55%,#EFB600);
     border:1px solid #b98f0a; border-radius:4px; padding:17px 46px;
     box-shadow:inset 0 1px 0 rgba(255,255,255,.75), 0 2px 3px rgba(0,0,0,.28);
   }
-  .go-btn:hover{ background:linear-gradient(#FFD940,#F7C400 55%,#E4AD00); }
-  .go-btn:active{ box-shadow:inset 0 2px 3px rgba(0,0,0,.25); }
-  .go-sub{ margin-top:13px; font-size:11px; color:#666; }
-  .go-url{ color:#1A719C; font-weight:bold; text-decoration:none; }
-  .mig-panel{ margin:22px 0; box-shadow:2px 3px 9px rgba(0,0,0,.12); }
-  .mig-hd{ background:#0A4A65; color:#fff; font-size:12px; font-weight:bold; letter-spacing:.3px; padding:6px 12px; }
-  .feat{ width:100%; border-collapse:collapse; font-size:12px; background:#fff;
+  #go-btn:hover{ background:linear-gradient(#FFD940,#F7C400 55%,#E4AD00); }
+  #go-btn:active{ box-shadow:inset 0 2px 3px rgba(0,0,0,.25); }
+  #go-sub{ margin-top:13px; font-size:11px; color:#666; }
+  #go-url{ color:#1A719C; font-weight:bold; text-decoration:none; }
+  mig-panel{ display: block; unicode-bidi: isolate; margin:22px 0; box-shadow:2px 3px 9px rgba(0,0,0,.12); }
+  h2{ background:#0A4A65; color:#fff; font-size:12px; font-weight:bold; letter-spacing:.3px; padding:6px 12px; }
+  #feat{ width:100%; border-collapse:collapse; font-size:12px; background:#fff;
     border:1px solid #c7c7c7; border-top:none; }
-  .feat td{ padding:8px 12px; border-top:1px solid #e4e4e4; vertical-align:top; line-height:1.5; }
-  .feat tr:first-child td{ border-top:none; }
-  .feat tr:nth-child(even){ background:#f6f9fa; }
-  .feat .ft-name{ width:200px; font-weight:bold; color:#0A4A65; white-space:nowrap; }
-  .mig-soon{ border:1px solid #c7c7c7; border-top:none; background:#fbf6e6;
+  #feat td{ padding:8px 12px; border-top:1px solid #e4e4e4; vertical-align:top; line-height:1.5; }
+  #feat tr:first-child td{ border-top:none; }
+  #feat tr:nth-child(even){ background:#f6f9fa; }
+  #feat .ft-name{ width:200px; font-weight:bold; color:#0A4A65; white-space:nowrap; }
+  mig-soon{ display: block; border:1px solid #c7c7c7; border-top:none; background:#fbf6e6;
     color:#0A4A65; font-size:13px; line-height:1.6; text-align:center; padding:11px 14px; }
-  .mig-soon .soon-hl{ color:#CB6C12; }
-  .mig-note{ border:1px solid #c7c7c7; border-top:none; background:#fff;
-    padding:15px 16px; font-size:12.5px; line-height:1.75; color:#333; }
-  .mig-note b{ color:#0A4A65; }
-  .mig-note p{ margin:0 0 10px; }
-  .mig-note p:last-child{ margin-bottom:0; }
+  mig-soon soon-hl{ color:#CB6C12; }
+  mig-note{ display: block; border:1px solid #c7c7c7; border-top:none; background:#fff;
+    padding:15px 16px; font-size:12.5px; line-height:1.75px; color:#333; }
+  mig-note strong{ color:#0A4A65; }
+  mig-note p{ margin:0 0 10px; line-height:1.75;}
+  mig-note p:last-child{ margin-bottom:0; }
 </style>
 </head>
 <body>
 
 <!-- ===== MY TRITONLINK chrome ===== -->
-<div class="tl-banner">
-  <span class="tl-brand">UCSD Course Planner</span>
-  <span class="tl-wordmark"><span class="tl-unofficial">Unofficial</span>UC San Diego</span>
-</div>
-<div class="disclaimer-strip">
-  Unofficial, student-made planning tool &mdash; <b>not affiliated with, endorsed by, or operated by UC San Diego.</b>
-  &ldquo;UC San Diego,&rdquo; &ldquo;Triton,&rdquo; and &ldquo;WebReg&rdquo; are marks of the university, used here only to describe what this tool helps with.
-</div>
-<div class="tl-shard">
-  <svg viewBox="0 0 1200 74" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
-    <polygon points="380,0 560,0 470,58" fill="#14425C" opacity="0.85"/>
-    <polygon points="470,0 700,0 610,46" fill="#1A719C" opacity="0.55"/>
-    <polygon points="540,0 640,52 760,0" fill="#0A4A65" opacity="0.75"/>
-    <polygon points="600,0 830,0 730,64" fill="#FFCD00" opacity="0.55"/>
-    <polygon points="700,0 900,0 800,40" fill="#1A719C" opacity="0.45"/>
-    <polygon points="300,0 430,0 380,34" fill="#FFCD00" opacity="0.4"/>
-    <polygon points="760,0 960,30 900,0" fill="#14425C" opacity="0.6"/>
-    <polygon points="430,0 520,40 470,0" fill="#7FB2C6" opacity="0.6"/>
-    <polygon points="820,0 1010,0 930,36" fill="#7FB2C6" opacity="0.45"/>
-    <polygon points="240,0 340,0 300,22" fill="#1A719C" opacity="0.3"/>
-    <polygon points="930,0 1060,0 1000,22" fill="#FFCD00" opacity="0.3"/>
-    <rect x="0" y="0" width="1200" height="74" fill="url(#fade)"/>
-    <defs>
-      <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-        <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
-      </linearGradient>
-    </defs>
-  </svg>
-</div>
+<header>
+    <tl-banner>
+    <tl-brand>UCSD Course Planner</tl-brand>
+    <tl-wordmark><tl-unofficial>Unofficial</tl-unofficial>UC San Diego</tl-wordmark>
+    </tl-banner>
+    <disclaimer-strip>
+    Unofficial, student-made planning tool &mdash; <b>not affiliated with, endorsed by, or operated by UC San Diego.</b>
+    &ldquo;UC San Diego,&rdquo; &ldquo;Triton,&rdquo; and &ldquo;WebReg&rdquo; are marks of the university, used here only to describe what this tool helps with.
+    </disclaimer-strip>
+    <tl-shard>
+    <svg viewBox="0 0 1200 74" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+        <polygon points="380,0 560,0 470,58" fill="#14425C" opacity="0.85"/>
+        <polygon points="470,0 700,0 610,46" fill="#1A719C" opacity="0.55"/>
+        <polygon points="540,0 640,52 760,0" fill="#0A4A65" opacity="0.75"/>
+        <polygon points="600,0 830,0 730,64" fill="#FFCD00" opacity="0.55"/>
+        <polygon points="700,0 900,0 800,40" fill="#1A719C" opacity="0.45"/>
+        <polygon points="300,0 430,0 380,34" fill="#FFCD00" opacity="0.4"/>
+        <polygon points="760,0 960,30 900,0" fill="#14425C" opacity="0.6"/>
+        <polygon points="430,0 520,40 470,0" fill="#7FB2C6" opacity="0.6"/>
+        <polygon points="820,0 1010,0 930,36" fill="#7FB2C6" opacity="0.45"/>
+        <polygon points="240,0 340,0 300,22" fill="#1A719C" opacity="0.3"/>
+        <polygon points="930,0 1060,0 1000,22" fill="#FFCD00" opacity="0.3"/>
+        <rect x="0" y="0" width="1200" height="74" fill="url(#fade)"/>
+        <defs>
+        <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
+        </linearGradient>
+        </defs>
+    </svg>
+    </tl-shard>
+</header>
 
-<div class="page">
-  <div class="mig">
-
-    <h1 class="page-title">This planner has moved to TritonPlan</h1>
-    <p class="mig-intro">
-      Thanks for using the course planner. Big news: <b>UC San Diego is retiring My TritonLink.</b> As of July 2026
-      it's being replaced by the new Triton Student System (TSS), and in the move a lot of the tools students actually
-      lean on are being <b>cut</b> &mdash; <b>WebReg and its planner are going away, the GPA Calculator is going away,
-      and courses.ucsd.edu is going away.</b> Incoming Fall 2026 students won't get My TritonLink at all.
-    </p>
-    <p class="mig-intro">
-      <b>TritonPlan is the permanent home for all of that.</b> The WebReg-style schedule planner, your degree audit, a
-      prerequisite-checked degree planner, the full course catalog, and a GPA calculator &mdash; kept in one place,
-      for good.
-    </p>
-
-    <div class="mig-cta">
-      <a class="go-btn" href="https://tritonplan.com">Go to TritonPlan &raquo;</a>
-      <div class="go-sub">
-        <a class="go-url" href="https://tritonplan.com">tritonplan.com</a>
-        &nbsp;&middot;&nbsp; free &nbsp;&middot;&nbsp; sign in with your @ucsd.edu account
-      </div>
-    </div>
-
-    <div class="mig-panel">
-      <div class="mig-hd">WHAT'S ON TRITONPLAN</div>
-      <table class="feat"><tbody>
-        <tr><td class="ft-name">Schedule Planner</td><td>The classic course planner you've been using &mdash; still here, unchanged.</td></tr>
-        <tr><td class="ft-name">Degree Audit</td><td>Your major and college requirements, laid out as earned versus still needed.</td></tr>
-        <tr><td class="ft-name">Degree Planner</td><td>Map out your quarters and it checks the prerequisites for you as you go.</td></tr>
-        <tr><td class="ft-name">General Catalog</td><td>Search Fall 2026 courses with your own prerequisite status shown on each one.</td></tr>
-        <tr><td class="ft-name">GPA Calculator</td><td>Project your GPA, or work backward to the grades you'd need this quarter.</td></tr>
-        <tr><td class="ft-name">Academic History</td><td>Import your transcript once and see everything you've taken and what's in progress.</td></tr>
-      </tbody></table>
-      <div class="mig-soon">And this is just the start &mdash; <b>tons of new <span class="soon-hl">actually useful</span> features are coming very soon.</b></div>
-    </div>
-
-    <div class="mig-panel">
-      <div class="mig-hd">A NOTE OF THANKS</div>
-      <div class="mig-note">
+<main>
+    <article>
+        <h1>This planner has moved to TritonPlan</h1>
         <p>
-          To everyone who chipped in to keep this project going &mdash; <b>thank you, sincerely.</b>
-          The donations genuinely matter, and I want to be straight about where they go:
-          <b>100% of them go back into TritonPlan.</b> Nothing else.
+        Thanks for using the course planner. Big news: <b>UC San Diego is retiring My TritonLink.</b> As of July 2026
+        it's being replaced by the new Triton Student System (TSS), and in the move a lot of the tools students actually
+        lean on are being <b>cut</b> &mdash; <b>WebReg and its planner are going away, the GPA Calculator is going away,
+        and courses.ucsd.edu is going away.</b> Incoming Fall 2026 students won't get My TritonLink at all.
         </p>
         <p>
-          That means keeping the course data fresh every quarter, building out new tools, covering the
-          hosting, and keeping the whole thing free for students. This started as a small course planner
-          and turned into something a lot more useful because people actually backed it.
+        <b>TritonPlan is the permanent home for all of that.</b> The WebReg-style schedule planner, your degree audit, a
+        prerequisite-checked degree planner, the full course catalog, and a GPA calculator &mdash; kept in one place,
+        for good.
         </p>
-        <p>
-          The best thing you can do now is sign in, use it, and tell me what to fix next.
-        </p>
-      </div>
-    </div>
 
-  </div>
+        <section id = "mig-cta">
+        <a id="go-btn" href="https://tritonplan.com">Go to TritonPlan &raquo;</a>
+        <section id = "go-sub">
+            <a id="go-url" href="https://tritonplan.com">tritonplan.com</a>
+            &nbsp;&middot;&nbsp; free &nbsp;&middot;&nbsp; sign in with your @ucsd.edu account
+        </section>
+        </section>
 
-  <div class="page-footer">
-    <div>
-      Unofficial &middot; not affiliated with, endorsed by, or operated by UC San Diego &middot; does not perform enrollment.<br>
-      &rarr; <a href="https://tritonplan.com">tritonplan.com</a>
-    </div>
-    <div class="footer-wordmark">UC San Diego</div>
-  </div>
-</div>
+        <mig-panel>
+            <h2>WHAT'S ON TRITONPLAN</h2>
+            <table id="feat"><tbody>
+                <tr><td class="ft-name">Schedule Planner</td><td>The classic course planner you've been using &mdash; still here, unchanged.</td></tr>
+                <tr><td class="ft-name">Degree Audit</td><td>Your major and college requirements, laid out as earned versus still needed.</td></tr>
+                <tr><td class="ft-name">Degree Planner</td><td>Map out your quarters and it checks the prerequisites for you as you go.</td></tr>
+                <tr><td class="ft-name">General Catalog</td><td>Search Fall 2026 courses with your own prerequisite status shown on each one.</td></tr>
+                <tr><td class="ft-name">GPA Calculator</td><td>Project your GPA, or work backward to the grades you'd need this quarter.</td></tr>
+                <tr><td class="ft-name">Academic History</td><td>Import your transcript once and see everything you've taken and what's in progress.</td></tr>
+            </tbody></table>
+            <mig-soon>And this is just the start &mdash; <b>tons of new <soon-hl>actually useful</soon-hl> features are coming very soon.</b></mig-soon>
+        </mig-panel>
+
+        <mig-panel>
+            <h2>A NOTE OF THANKS</h2>
+            <mig-note>
+                <p>
+                To everyone who chipped in to keep this project going &mdash; <strong>thank you, sincerely.</strong>
+                The donations genuinely matter, and I want to be straight about where they go:
+                <strong>100% of them go back into TritonPlan.</strong> Nothing else.
+                </p>
+                <p>
+                That means keeping the course data fresh every quarter, building out new tools, covering the
+                hosting, and keeping the whole thing free for students. This started as a small course planner
+                and turned into something a lot more useful because people actually backed it.
+                </p>
+                <p>
+                The best thing you can do now is sign in, use it, and tell me what to fix next.
+                </p>
+            </mig-note>
+        <mig-panel>
+    </article>
+</main>
+<footer>
+    <section>
+    Unofficial &middot; not affiliated with, endorsed by, or operated by UC San Diego &middot; does not perform enrollment.<br>
+    &rarr; <a href="https://tritonplan.com">tritonplan.com</a>
+    </section>
+    <footer-wordmark>UC San Diego</footer-wordmark>
+</footer>
 
 </body>
 </html>
